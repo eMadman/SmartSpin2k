@@ -19,8 +19,16 @@ void process() {
     RUN_TEST(test.test_parses_power);
   }
   // Cycle Power Tests
-  test_cyclePowerData test;
   {
+    test_cyclePowerData test;
+    RUN_TEST(test.test_parses_power);
+    RUN_TEST(test.test_parses_cadence);
+    RUN_TEST(test.test_parses_heartrate);
+    RUN_TEST(test.test_parses_speed);
+  }
+  // Cycle Power Tests
+  {
+    test_echelonData test;
     RUN_TEST(test.test_parses_power);
     RUN_TEST(test.test_parses_cadence);
     RUN_TEST(test.test_parses_heartrate);

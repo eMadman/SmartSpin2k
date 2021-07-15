@@ -21,3 +21,11 @@ class test_cyclePowerData {
   static void test_parses_heartrate(void);
   static void test_parses_speed(void);
 };
+
+class test_echelonData {
+ public:
+  static void test_parses_power(void);
+  static void test_parses_cadence(void);
+  static void test_parses_heartrate(void);
+  static void test_parses_speed(void);
+};

@@ -24,7 +24,7 @@ class EchelonData : public SensorData {
   void decode(uint8_t *data, size_t length);
 
  private:
-  float cadence  = nanf("");
-  int resistance = INT_MIN;
-  int power      = INT_MIN;
+  uint8_t cadence    = 0;
+  uint8_t resistance = 0;
+  int power          = INT_MIN;
 };

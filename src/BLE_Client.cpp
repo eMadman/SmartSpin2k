@@ -495,8 +495,19 @@ void SpinBLEClient::postConnect(NimBLEClient *pClient) {
             return;
           }
           // Enable device notifications
-          byte message[] = {0xF0, 0xB0, 0x01, 0x01, 0xA2};
-          writeCharacteristic->writeValue(message, 5);
+          uint8_t initData1[] = {0xf0, 0xa1, 0x00, 0x91};
+          uint8_t initData2[] = {0xf0, 0xa3, 0x00, 0x93};
+          uint8_t initData3[] = {0xf0, 0xb0, 0x01, 0x01, 0xa2};
+          for (int i = 0; i < 4; i++) {
+            writeCharacteristic->writeValue(initData1, 5);
+            vTaskDelay(20 / portTICK_PERIOD_MS);
+          }
+          writeCharacteristic->writeValue(initData2, 4);
+          vTaskDelay(20 / portTICK_PERIOD_MS);
+          writeCharacteristic->writeValue(initData1, 5);
+          vTaskDelay(20 / portTICK_PERIOD_MS);
+          writeCharacteristic->writeValue(initData3, 4);
+          vTaskDelay(20 / portTICK_PERIOD_MS);
           SS2K_LOG(BLE_CLIENT_LOG_TAG, "Activated Echelon callbacks.");
         }
         // spinBLEClient.removeDuplicates(pclient);
