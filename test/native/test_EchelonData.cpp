@@ -73,29 +73,29 @@ void test_echelonData::test_parses_power(void) {
   TEST_ASSERT_EQUAL_INT(98, sensor.getPower());
 
   sensor.decode(t11, sizeof(t11));
-  TEST_ASSERT_EQUAL_INT(63, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(53, sensor.getPower());
 
   sensor.decode(t2, sizeof(t2));
-  TEST_ASSERT_EQUAL_INT(22, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(18, sensor.getPower());
 
   sensor.decode(t3, sizeof(t3));
-  TEST_ASSERT_EQUAL_INT(24, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(21, sensor.getPower());
 
   sensor.decode(t9, sizeof(t9));
-  TEST_ASSERT_EQUAL_INT(40, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(42, sensor.getPower());
 
   sensor.decode(t4, sizeof(t4));
-  TEST_ASSERT_EQUAL_INT(40, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(42, sensor.getPower());
 
   sensor.decode(t5, sizeof(t5));
-  TEST_ASSERT_EQUAL_INT(43, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(50, sensor.getPower());
 
   sensor.decode(t6, sizeof(t6));
-  TEST_ASSERT_EQUAL_INT(47, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(52, sensor.getPower());
 
   sensor.decode(t7, sizeof(t7));
-  TEST_ASSERT_EQUAL_INT(378, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(487, sensor.getPower());
 
   sensor.decode(t8, sizeof(t8));
-  TEST_ASSERT_EQUAL_INT(412, sensor.getPower());
+  TEST_ASSERT_EQUAL_INT(530, sensor.getPower());
 }

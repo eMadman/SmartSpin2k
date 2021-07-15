@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Received BLE is now buffered and then processed. 
 - Added Fitness Machine supported inclination range characteristic.
 - Additional unit tests. 
+- Echelon data tests.
+- Expanded Echelon initialization. 
+- Implemented Echelon power calibration table from qdomyos-zwift. 
 
 ### Changed
 - Renamed BLE_stepperPosition to BLE_targetPosition to clarify the variable it controls. 
