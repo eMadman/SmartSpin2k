@@ -8,9 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Added a test for wifi connectivity and a function to repair the connection.
-- Added a new WIFI_Control class. 
+- Added a new WIFI_Control class.
+- 
 ### Changed
 - Pruned a couple unused functions from main.
+- Updated to Esp32 Arduino master.
+- Changed BLE tasks back to core 1.
+- Increased stack size on both BLE tasks as well as the HTTP server task. 
 ### Fixed
 ### Hardware
 - Short Mod, increased screw hole size from 4.0mm to 4.2mm.
