@@ -75,13 +75,13 @@
 
 // Number of watts per shift expected by ERG mode for it's calculation. The user should target this number by adjusting Shift Step until WATTS_PER_SHIFT
 // is obtained as closely as possible during each shift.
-#define WATTS_PER_SHIFT 30
+#define WATTS_PER_SHIFT 15
 
 // Default Max Watts that the brake on the spin bike can absorb from the user.
 #define DEFAULT_MAX_WATTS 700
 
 // Wattage at which to automatically assume minimum brake resistance.  
-#define MIN_WATTS 50
+#define MIN_WATTS 35
 
 // Default debounce delay for shifters. Increase if you have false shifts. Decrease if shifting takes too long. 
 #define DEBOUNCE_DELAY 400
@@ -170,7 +170,7 @@
 #define POWERTABLE_SIZE 20
 
 // Size of increments (in watts) for the ERG Lookup Table. Needs to be one decimal place for proper calculations i.e. 50.0
-#define POWERTABLE_INCREMENT 50.0
+#define POWERTABLE_INCREMENT 25.0
 
 //Number of similar power samples to take before writing to the Power Table
 #define POWER_SAMPLES 5 
