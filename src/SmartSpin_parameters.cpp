@@ -55,6 +55,7 @@ void userParameters::setDefaults() {
   password              = DEFAULT_PASSWORD;
   connectedPowerMeter   = CONNECTED_POWER_METER;
   connectedHeartMonitor = CONNECTED_HEART_MONITOR;
+  minWatts              = DEFAULT_MIN_WATTS
   maxWatts              = DEFAULT_MAX_WATTS;
   stepperDir            = true;
   shifterDir            = true;

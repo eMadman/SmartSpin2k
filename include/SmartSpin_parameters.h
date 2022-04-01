@@ -104,6 +104,7 @@ class userParameters {
   float ERGSensitivity;
   bool autoUpdate;
   int stepperPower;
+  int minWatts;
   int maxWatts;
   bool stepperDir;
   bool shifterDir;
@@ -128,6 +129,7 @@ class userParameters {
   const char* getconnectedPowerMeter() { return connectedPowerMeter.c_str(); }
   const char* getconnectedHeartMonitor() { return connectedHeartMonitor.c_str(); }
   int getStepperPower() { return stepperPower; }
+  int getMinWatts() { return minWatts; }
   int getMaxWatts() { return maxWatts; }
   bool getStepperDir() { return stepperDir; }
   bool getShifterDir() { return shifterDir; }
@@ -147,6 +149,7 @@ class userParameters {
   void setConnectedPowerMeter(String cpm) { connectedPowerMeter = cpm; }
   void setConnectedHeartMonitor(String cHr) { connectedHeartMonitor = cHr; }
   void setStepperPower(int sp) { stepperPower = sp; }
+  void setMaxWatts(int minW) { minWatts = minW; }
   void setMaxWatts(int maxW) { maxWatts = maxW; }
   void setStepperDir(bool sd) { stepperDir = sd; }
   void setShifterDir(bool shd) { shifterDir = shd; }

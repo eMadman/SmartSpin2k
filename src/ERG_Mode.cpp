@@ -109,7 +109,7 @@ void PowerTable::processPowerValue(PowerBuffer& powerBuffer, int cadence, Measur
 
 // Set min / max stepper position
 void PowerTable::setStepperMinMax() {
-  int _return = this->lookup(MIN_WATTS, 90);
+  int _return = this->lookup(userconfig.getMinWatts(), 90);
   if (_return != RETURN_ERROR) {
     rtConfig.setMinStep(_return);
     SS2K_LOG(ERG_MODE_LOG_TAG, "Min Position Set: %d", _return);

@@ -81,7 +81,7 @@
 #define DEFAULT_MAX_WATTS 700
 
 // Wattage at which to automatically assume minimum brake resistance.  
-#define MIN_WATTS 50
+#define DEFAULT_MIN_WATTS 50
 
 // Default debounce delay for shifters. Increase if you have false shifts. Decrease if shifting takes too long. 
 #define DEBOUNCE_DELAY 400

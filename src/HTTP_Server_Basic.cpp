@@ -462,6 +462,11 @@ void HTTP_Server::settingsProcessor() {
       ss2k.updateStepperPower();
     }
   }
+  if (!server.arg("minWatts").isEmpty()) {
+    uint64_t minWatts = server.arg("minWatts").toInt();
+    if (minWatts >= 25 && minWatts <= 200) {
+      userConfig.setMinWatts(minWatts);
+    }
   if (!server.arg("maxWatts").isEmpty()) {
     uint64_t maxWatts = server.arg("maxWatts").toInt();
     if (maxWatts >= 300 && maxWatts <= 2000) {
